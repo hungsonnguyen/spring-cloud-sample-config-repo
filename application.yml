@@ -1,0 +1,9 @@
+eureka:
+  client:
+    register-with-eureka: true #Đăng kí service với sever
+    fetch-registry: true #Lấy danh sách đăng kí
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #Đường dẫn mặc định sever
+  instance:
+    hostname: localhost
+
