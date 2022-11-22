@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservice-demo?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: openning
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+eureka:
+  client:
+    register-with-eureka: true #Đăng kí service với sever
+    fetch-registry: true #Lấy danh sách đăng kí
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #Đường dẫn mặc định sever
+  instance:
+    hostname: localhost
